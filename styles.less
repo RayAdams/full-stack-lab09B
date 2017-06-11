@@ -1,6 +1,17 @@
+@box-height: 600px;
+@box-width: 600px;
+@shape-position: absolute;
+
+.roundedCorners(@radius: 100%){
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+}
+// ^style variables^
+
 #myCanvas {
-    height: 600px;
-    width: 600px;
+    height: @box-height;
+    width: @box-width;
     background-color: grey;
     position: relative;
     float: left;
@@ -12,8 +23,8 @@ h6 {
 
 .circle {
     background-color: purple;
-    border-radius: 50%;
-    position: absolute;
+    .roundedCorners(50%);
+    position: @shape-position;
 }
 
 .triangle {
@@ -22,16 +33,15 @@ h6 {
     border-style: solid;
     border-width: 0 0 100px 100px;
     border-color: transparent transparent yellow transparent;
-    position: absolute;
+    position: @shape-position;
 }
-
 
 .rectangle {
 	background-color: green;
-    position: absolute;
+    position: @shape-position;
 }
 
 .square {
 	background-color: red;
-    position: absolute;
+    position: @shape-position;
 }
