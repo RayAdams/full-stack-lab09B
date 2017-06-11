@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shape Up or Shape Out TS/Less Refactor</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <h3>Circle:</h3>
+            <input id="circle" type="text" placeholder="radius"/>
+            <button id="circleBtn">Insert</button>
+
+            <h3>Isoceles Right Triangle:</h3>
+            <input id="triHeight" type="text" placeholder="height"/>
+            <button id="triangleBtn">Insert</button>
+
+            <h3>Rectangle:</h3>
+            <input id="recWidth" type="text" placeholder="width"/>
+            <input id="recHeight" type="text" placeholder="height"/>
+            <button id="rectangleBtn">Insert</button>
+            
+            <h3>Square:</h3>
+            <input id="sqSide" type="text" placeholder="side length"/>
+            <button id="squareBtn">Insert</button>
+        </div>
+
+        <div id="myCanvas"></div>
+        
+        <div>
+            <h6>Shape Name: <span id="shapeName"></span></h6>
+            <h6>Width: <span id="currentWidth"></span></h6>
+            <h6>Height: <span id="currentHeight"></span></h6>
+            <h6>Radius: <span id="currentRadius"></span></h6>
+            <h6>Area: <span id="currentArea"></span></h6>
+            <h6>Perimeter: <span id="currentPerimeter"></span></h6>
+        </div>
+    <script src="app.js"></script>
+    </body>
+</html>
